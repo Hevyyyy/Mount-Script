@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Script</title>
+    <link rel="stylesheet" href="overview.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+      
+    <nav class="p-5 bg-blue-300 md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+    
+          <span class="text-2xl font-[poppins] cursor-pointer">
+            <span class="text-2xl font-[poppins] cursor-pointer">
+                <img class="h-10 outline "  src="/Screenshot 2024-08-10 103110.png" alt=""> 
+              </span>
+            
+          </span>
+          
+      <span class="text-3xl cursor-pointer ma-2 mx-2 md:hidden block">
+         <ion-icon name="menu" onclick="Menu(this)" ></ion-icon>
+         
+      </span>
+    
+ 
+            <ul class="md:flex md:items-center z=[-1] font-serif md:z-auto md:static absolute  text-gray-600 w-full right-50 md:w-auto md:py-0 
+            py-4 md:pl-20 pl-7 md:opacity-100  opacity-0 top-[-400px] transition-all ease-in duration-500">
+  
+
+          
+        
+            <li class="mx-6 my-6 md:my-0 " >
+                <a href="homepage.html" class="text-lg  md:border-gray-700	text-black hover:text-white  duration-500" >Home</a></li>
+              <li class="mx-6 my-6 md:my-0 ">
+                <a href="courses.html" class="text-lg  md:border-gray-700	text-black hover:text-white  duration-500" >Courses</a></li>
+                <li class="mx-6 my-6 md:my-0 ">
+                    <a href="overview.html" class="text-lg  md:border-gray-700	text-black hover:text-white  duration-500" >Overview</a></li>
+                    <li class="mx-6 my-6 md:my-0 ">
+                        
+           <a href="contactus.html" class="text-lg  md:border-gray-700	text-black hover:text-white duration-500">Contact Us</a></li>
+        
+
+            </ul>
+
+          </div>
+        </nav>
+
+        <script>
+            function Menu(e){
+               let list = document.querySelector('ul');
+               if(e.name === 'menu'){
+                 e.name = "close";
+                 list.classList.add('top-[80px]');
+                 list.classList.add('opacity-100');
+               } else {
+                 e.name = "menu";
+                 list.classList.remove('top-[80px]');
+                 list.classList.remove('opacity-100');
+               }
+            }
+          </script>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <img alt="feature" class="object-cover object-center h-full w-full" src="/Music App - UI Design.jpg">
+    </div>
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+       
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Introdution To figma</h2>
+          <p class="leading-relaxed text-base">Figma is a powerful and versatile design tool that's taking the world by storm. It's a web-based platform, meaning you can access it from anywhere with an internet connection.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+       
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Understanding Interface</h2>
+          <p class="leading-relaxed text-base">An interface is simply the point of interaction between two things. It's the way these things communicate and exchange information.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+       
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Prototyping The Design</h2>
+          <p class="leading-relaxed text-base">Prototyping is the process of creating interactive, working models of your designs. It's like building a rough draft or a preview of your final product.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+        
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+          
+
+</body>
+</html>
